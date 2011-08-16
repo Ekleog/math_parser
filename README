@@ -1,0 +1,41 @@
+Math Parser, a mathematical parser written in C++11
+
+=== BUILD ===
+
+To build, run make. Temporary compilation files will be written in the
+obj/ directory. You could delete them by using make clean.
+The built program will be named parser.
+
+If you are not on a make-supported platform, then you should try to build
+it by yourself. At the moment, I don't already have written a CMake file.
+Moreover, I think it would be impossible to do so, as there is not yet any
+standard CMake feature enabling C++11.
+
+=== USE ===
+
+Just run the parser file. Enter your expressions at the ">>>" prompt
+I'm sorry, but at the moment all the text is written in french.
+
+To get help, type "help" or "?" at the prompt. To quit, type "quit".
+
+If you want to create a new variable, use "name = content".
+
+If you want to create a new function, use "name(args) = content".
+
+If you get "inf" of "nan" in the result, it is likely that you made an
+invalid operation.
+
+Available operators : +, -, *, /, %, ^
+
+Already defined constants :
+ * pi (3.141592653589793238462643383279)
+ * e  (2.718281828459045235360287471352)
+
+Already defined functions :
+ * sqrt(x)
+ * cos(x), sin(x), tan(x)
+ * ln(x)
+ * exp(x)    : e^x
+ * pow(x, y) : x^y
+ * rt(x, y)  : y-th root of x
+ * log(x, y) : logarithm of x in base y
