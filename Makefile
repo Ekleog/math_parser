@@ -1,4 +1,4 @@
-CXXFLAGS=-std=c++0x -Wall -Wextra -pedantic -g
+CXXFLAGS=-std=c++0x -Wall -Wextra -pedantic -O3 -flto
 
 OBJ=obj/main.o obj/Parse.o obj/Expression.o obj/Split.o obj/Context.o
 
